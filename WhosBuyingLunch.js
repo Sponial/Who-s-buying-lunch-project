@@ -2,6 +2,7 @@ var nameList = ["Angela", "Ben", "Jenny", "Michael", "Chloe"]
 function whosBuyingLunch() {
     var nameListPosition = nameList.length;
     var buyLunch = Math.random() * 6;
+    buyLunch = Math.floor(buyLunch);
     var whosBuying = nameList[buyLunch];
     var message = whosBuying + " is going to buy lunch today!"
     return message;
