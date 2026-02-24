@@ -1,10 +1,13 @@
 var nameList = ["Angela", "Ben", "Jenny", "Michael", "Chloe"]
 function whosBuyingLunch() {
     var nameListPosition = nameList.length;
-    var buyLunch = Math.random(nameListPosition);
+    var buyLunch = Math.random() * 6;
     var whosBuying = nameList[buyLunch];
     var message = whosBuying + " is going to buy lunch today!"
     return message;
+
+    //Okay, so chatchiputti confirmed that decimals won't work for passing into an array. And also math.random doesn't accept anything outside of integers, so name list position won't work there. 
+    //I need to have a way of turning that decimal into a full number. I believe I can do that just by timesing it by the range of number that I want it to go up to + 1
 }
 
 whosBuyingLunch();
